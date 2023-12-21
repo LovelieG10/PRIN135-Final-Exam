@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>PRIN134 Final Exam</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+  <container>
+<body>
+  <h1 style="font-family: Lucida Console, Courier New, monospace">Create a To Do Item</h1>
+  <div>
+      <label style="font-family: cursive" id="name-label">Title</label>
+      <input class="form__field" id="titleInput" required type="text" placeholder="Enter title">
+  </div>
+  
+  <div>
+    <label style="font-family: cursive" id="name-label">Details</label>
+    <textarea class="form__field" id="detailsInput" required placeholder="Enter details..."></textarea>
+  </div>
+  
+  <div>
+      <button onclick="add()">Add</button>
+  <button onclick="clearInput()">Clear</button>
+  </div>
+
+  <div>
+    <h2 style="font-family: Lucida Console, Courier New, monospace">Processing</h2>
+    <h3 style="font-family: cursive">Select a process for to do processing</h3>
+  </div>
+  <div>
+    <button onclick="fifo()">First In First Out</button>
+    <button onclick="filo()">First In Last Out</button>
+    <button onclick="reset()">Reset</button>
+  </div>
+
+  <div>
+    <h2 style="font-family: Lucida Console, Courier New, monospace">To Do Items</h2>
+    <ul style="font-size: 1.5rem;" id="titleList"></ul>
+    <ul style="font-size: 1.5rem;" id="detailsList"></ul>
+  </div>
+
+  <div>
+    <h2 style="font-family: Lucida Console, Courier New, monospace">Done Items</h2>
+  <ul style="font-size: 1.5rem;" id="duoList"> </ul>
+    </div>
+  <script src="script.js"></script>
+
+  </container>
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
